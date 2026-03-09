@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "QtChatServer", "server\QtChatServer.vcxproj", "{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}"
+EndProject
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "QtChatClient", "client\QtChatClient.vcxproj", "{177B278F-2622-4D12-9A35-547B2D7D92B6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|Win32 = Debug|Win32
+		Release|x64 = Release|x64
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}.Debug|x64.ActiveCfg = Debug|x64
+		{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}.Debug|x64.Build.0 = Debug|x64
+		{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}.Debug|Win32.Build.0 = Debug|Win32
+		{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}.Release|x64.ActiveCfg = Release|x64
+		{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}.Release|x64.Build.0 = Release|x64
+		{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}.Release|Win32.ActiveCfg = Release|Win32
+		{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}.Release|Win32.Build.0 = Release|Win32
+		{177B278F-2622-4D12-9A35-547B2D7D92B6}.Debug|x64.ActiveCfg = Debug|x64
+		{177B278F-2622-4D12-9A35-547B2D7D92B6}.Debug|x64.Build.0 = Debug|x64
+		{177B278F-2622-4D12-9A35-547B2D7D92B6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{177B278F-2622-4D12-9A35-547B2D7D92B6}.Debug|Win32.Build.0 = Debug|Win32
+		{177B278F-2622-4D12-9A35-547B2D7D92B6}.Release|x64.ActiveCfg = Release|x64
+		{177B278F-2622-4D12-9A35-547B2D7D92B6}.Release|x64.Build.0 = Release|x64
+		{177B278F-2622-4D12-9A35-547B2D7D92B6}.Release|Win32.ActiveCfg = Release|Win32
+		{177B278F-2622-4D12-9A35-547B2D7D92B6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
