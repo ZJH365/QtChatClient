@@ -7,8 +7,9 @@
     <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
+    <QtSettings>Qt5.8.0_msvc2015</QtSettings>
     <ProjectGuid>{177B278F-2622-4D12-9A35-547B2D7D92B6}</ProjectGuid>
-    <Keyword>Win32Proj</Keyword>
+    <Keyword>Qt4VSv1.0</Keyword>
     <RootNamespace>QtChatClient</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -23,6 +24,7 @@
     <QtToolsPath Condition="'$(QtToolsPath)'=='' and '$(QTDIR)'!=''">$(QTDIR)\bin</QtToolsPath>
   </PropertyGroup>
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\Qt.props" Condition="Exists('$(VCTargetsPath)\BuildCustomizations\Qt.props')" />
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"><Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" /></ImportGroup>
@@ -66,6 +68,7 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\Qt.targets" Condition="Exists('$(VCTargetsPath)\BuildCustomizations\Qt.targets')" />
     <Import Project="$(QtMsBuild)\qt.targets" />
   </ImportGroup>
 </Project>
