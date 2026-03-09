@@ -24,6 +24,7 @@
     <QtToolsPath Condition="'$(QtToolsPath)'=='' and '$(QTDIR)'!=''">$(QTDIR)\bin</QtToolsPath>
   </PropertyGroup>
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(QtMsBuild)\qt.props" Condition="Exists('$(QtMsBuild)\qt.props')" />
     <Import Project="$(VCTargetsPath)\BuildCustomizations\Qt.props" Condition="Exists('$(VCTargetsPath)\BuildCustomizations\Qt.props')" />
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>

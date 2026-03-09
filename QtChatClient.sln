@@ -2,9 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtChatServer", "server\QtChatServer.vcxproj", "{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}"
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "QtChatServer", "server\QtChatServer.vcxproj", "{9D567B48-0938-44D7-8B0B-D2D16ED75E0C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtChatClient", "client\QtChatClient.vcxproj", "{177B278F-2622-4D12-9A35-547B2D7D92B6}"
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "QtChatClient", "client\QtChatClient.vcxproj", "{177B278F-2622-4D12-9A35-547B2D7D92B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

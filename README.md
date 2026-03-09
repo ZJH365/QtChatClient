@@ -66,7 +66,9 @@ QtChatClient/
    - 在 VS2015 里执行：`Qt VS Tools -> Qt Project Settings`，给工程选择 Qt 5.8 (msvc2015)
    - 或设置系统环境变量 `QTDIR=C:\Qt\5.8\msvc2015`，重启 VS 后再编译
 6. 如果 VS 里看不到 **Qt Project Settings**：
-   - 说明工程未被 Qt VS Tools 识别；本仓库已把 `vcxproj` 关键字恢复为 `Qt4VSv1.0` 并加入 Qt build customization fallback。
+   - 说明工程未被 Qt VS Tools 识别；本仓库已同时设置：
+     - `sln` 使用 Qt VS Tools 项目类型 GUID（`{BC8A1FFA-BEE3-4634-8014-F334798102B3}`）
+     - `vcxproj` 使用 `Keyword=Qt4VSv1.0`，并导入 `$(QtMsBuild)\qt.props` / `qt_defaults.props` 与 `qt.targets`
    - 先确认已安装 **Qt VS Tools** 扩展，再右键项目看是否出现 Qt 菜单。
 
 ## 在 VS2015 中打开
