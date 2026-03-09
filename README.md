@@ -62,6 +62,9 @@ QtChatClient/
 2. VS2015 中安装 **Qt VS Tools**，并在 `Qt VS Tools -> Qt Versions` 配置 Qt 5.8 (MSVC2015) 路径。
 3. 如果仍提示工程类型不支持：关闭 VS，删除 `.vs/` 目录后重开解决方案。
 4. 本仓库 `sln` 已改为标准 VC++ 工程类型 GUID，可在未装 Qt 插件时先打开工程文件（仅构建会失败）。
+5. 如果报 `[QtRunWork] Error starting process \bin\uic.exe`，说明 Qt 路径为空：
+   - 在 VS2015 里执行：`Qt VS Tools -> Qt Project Settings`，给工程选择 Qt 5.8 (msvc2015)
+   - 或设置系统环境变量 `QTDIR=C:\Qt\5.8\msvc2015`，重启 VS 后再编译
 
 ## 在 VS2015 中打开
 

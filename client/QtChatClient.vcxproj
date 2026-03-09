@@ -18,6 +18,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><PlatformToolset>v140</PlatformToolset><UseDebugLibraries>true</UseDebugLibraries></PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><PlatformToolset>v140</PlatformToolset><UseDebugLibraries>false</UseDebugLibraries></PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <QtInstall Condition="'$(QtInstall)'=='' and '$(QTDIR)'!=''">$(QTDIR)</QtInstall>
+    <QtToolsPath Condition="'$(QtToolsPath)'=='' and '$(QTDIR)'!=''">$(QTDIR)\bin</QtToolsPath>
+  </PropertyGroup>
   <ImportGroup Label="ExtensionSettings">
     <Import Project="$(QtMsBuild)\qt_defaults.props" />
   </ImportGroup>
