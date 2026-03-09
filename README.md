@@ -71,6 +71,11 @@ QtChatClient/
      - `vcxproj` 使用 `Keyword=Qt4VSv1.0`，并导入 `$(QtMsBuild)\qt.props` / `qt_defaults.props` 与 `qt.targets`
    - 先确认已安装 **Qt VS Tools** 扩展，再右键项目看是否出现 Qt 菜单。
 
+7. 如果出现你贴的这类链接错误（`LoginDialog::LoginDialog` / `ClientWindow::ClientWindow` / `ChatClient::staticMetaObject`）：
+   - 根因通常是 `chatclient.cpp` / `logindialog.cpp` / `clientwindow.cpp` 被排除构建，或 Qt MOC 没跑。
+   - 本仓库已在 `client/QtChatClient.vcxproj` 对这些源文件显式设置 `ExcludedFromBuild=false`（四个配置都开启）。
+   - 先执行 `Build -> Clean Solution` 再 `Rebuild`。
+
 ## 在 VS2015 中打开
 
 1. 安装 Qt 5.8（MSVC2015）和 Qt VS Tools 插件。
